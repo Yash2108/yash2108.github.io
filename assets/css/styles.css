@@ -188,6 +188,7 @@ img{
 .nav__logo, .nav__toggle{
     color: var(--title-color);
     font-weight: var(--font-medium);
+    font-size: 2rem;
 }
 
 .nav__logo:hover{
@@ -285,7 +286,7 @@ img{
 }
 
 .home__social-icon{
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     color: var(--first-color);
 }
 
@@ -299,7 +300,7 @@ img{
 }
 
 .home__blob-img{
-    width: 170px;
+    width: 150px;
 }
 
 .home__data{
@@ -501,6 +502,14 @@ img{
 .skills__percentage{
     display: block;
     background-color: var(--first-color);
+}
+
+.skills__intermediate{
+    width: 75%;
+}
+
+.skills__beginner{
+    width: 40%;
 }
 
 .skills__html{
@@ -815,7 +824,7 @@ img{
 }
 
 .project__img{
-    width: 232px;
+    width: 240px;
     justify-self: center;
 }
 
@@ -1171,7 +1180,7 @@ img{
     }
 
     .about__img{
-        width: 350px;
+        width: 400px;
     }
 
     .about__description{
@@ -1256,9 +1265,9 @@ img{
         column-gap: 2rem;
     }
 
-    .footer__socials{
+    /* .footer__socials{
         justify-self: flex-end;
-    }
+    } */
 
     .footer__copy{
         margin-top: 4.5rem;
@@ -1268,7 +1277,7 @@ img{
 /* For large devices */
 @media screen and (min-width: 1024px){
     .header, .main, .footer__container{
-        padding: 0;
+        padding: 30px;
     }
 
     .home__blob{
@@ -1309,6 +1318,6 @@ img{
 
     .contact__inputs{
         grid-template-columns: repeat(2, 1fr);
-        
+
     }
 }
