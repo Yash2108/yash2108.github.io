@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <title>Topic Classification</title>
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/tc.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+    
+    <h1>Topic Classification</h1>
+    <div>
+        We first train a classifier on the existing labeled dataset. This gives us a base model. We use this base model to generate predictions of a portion of the unlabeled data. These predictions are also called pseudo-labels. We stack the pseudo labels and existing labeled data to generate a bigger dataset and train an improved classifier. This classifier is then used to further generate predictions and the process repeats till we get an acceptable result. 
+        We have implemented this approach in 2 ways:
+    </div>
+</br>
+    <div class="container">
+        <div>
+            <div class="method_title">
+                Approach 1: Graph Neural Networks
+            </div>
+            <div class="method_desc">
+                This method can be best explained using the following flowchart:
+                <img src="/assets/img/topic_class/approach1.png" alt="">
+            </div>
+            <div class="method_scores">
+                The following graphs describe the loss and F1 score achieved by this approach:
+                <img src="/assets/img/topic_class/loss1.png" alt="">
+                <img src="/assets/img/topic_class/f1score1.png" alt="">
+            </div>
+            <div class="method_test">
+                Test
+            </div>
+        </div>
+        <div>
+            <div class="method_title">
+                Approach 2: BERT embeddings
+            </div>
+            <div class="method_desc">
+                This method can be best explained using the following flowchart:
+                <img src="/assets/img/topic_class/approach2.png" alt="">
+    
+            </div>
+            <div class="method_scores">
+                The following graphs describe the accuracy and F1 score achieved by this approach:
+                <img src="/assets/img/topic_class/loss2.png" alt="">
+                <img src="/assets/img/topic_class/accuracy2.png" alt="">
+            </div>
+            <div  class="method_test">
+                Test
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
