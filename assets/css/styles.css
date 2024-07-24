@@ -1092,7 +1092,7 @@ img{
 
 .project__bg{
     background-color: var(--first-color-second);
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
 }
 
 .project__title{
